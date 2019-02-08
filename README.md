@@ -29,6 +29,7 @@ Argument: amount (the amount of merps you want)
 
 Returns: `[ "merp" ]` where the number of `"merp"` s equals the amount specified
 
+---
 
 `/api/v1/MERP`
 
@@ -36,17 +37,23 @@ Returns: `[ "merp" ]` where the number of `"merp"` s equals the amount specified
 
 returns `"MERP"` with varying amounts of '?'s and '!'s attached 
 
+---
+
 `/api/v1/cammerp`
 
 ### Get
 
 returns `"merp"` with each letter having a change of being capitalized
 
+---
+
 `/api/v1/umerp`
 
 ### Get
 
 returns `"ₘₑᵣₚ"`
+
+---
 
 ## Errors
 
