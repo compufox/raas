@@ -43,7 +43,7 @@ returns `"MERP"` with varying amounts of '?'s and '!'s attached
 
 ### Get
 
-returns `"merp"` with each letter having a change of being capitalized
+returns `"merp"` with each letter having a chance of being capitalized
 
 ---
 
@@ -71,4 +71,4 @@ have fun!
 
 # Contributing
 
-please contribute and help expand our evermerpy future
+please contribute and help expand our evermerpin' future
