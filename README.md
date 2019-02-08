@@ -30,9 +30,27 @@ Argument: amount (the amount of merps you want)
 Returns: `[ "merp" ]` where the number of `"merp"` s equals the amount specified
 
 
+`/api/v1/MERP`
+
+### Get
+
+returns `"MERP"` with varying amounts of '?'s and '!'s attached 
+
+`/api/v1/cammerp`
+
+### Get
+
+returns `"merp"` with each letter having a change of being capitalized
+
+`/api/v1/umerp`
+
+### Get
+
+returns `"ₘₑᵣₚ"`
+
 ## Errors
 
-if any argument besides 'amount' is passed through the post request you'll recieve an error in the form of `{ error: "merp" }`
+if any argument besides 'amount' is passed through the post request, or any non-existent endpoint is requested, you'll recieve an error in the form of `{ error: "merp" }`
 
 even when you lose, you win!
 
