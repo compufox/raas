@@ -59,12 +59,18 @@ Cuba.define do
   end
 
   on post do
-    on 'api/v1/merp' do
-      on param('amount') do |amt|
-        merps = []
-        amt.to_i.times { merps << 'merp' }
-        
-        res.write merps.to_json
+    on 'api/v1' do
+      on 'merp' do
+        on param('amount') do |amt|
+          merps = []
+          amt.to_i.times { merps << 'merp' }
+          
+          res.write merps.to_json
+        end
+
+        on true do
+          res.write ApiErrors.sample.to_json
+        end
       end
 
       on true do
