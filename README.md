@@ -10,7 +10,7 @@ finally! the future is now!!!!
 
 `$ bundle exec rackup`
 
-this should start the api server at port 9292
+this should start the api server at port 18520
 
 
 ## Endpoints
