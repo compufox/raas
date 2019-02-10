@@ -2,13 +2,13 @@
 require 'cuba'
 require 'json'
 
-ApiErrors = [ { error: 'merp' },
-              { error: 'OvO'  },
-              { error: 'UvU'  }
+ApiErrors = [ { error: 'reet' },
+              { error: 'OwO'  },
+              { error: 'UwU'  }
             ]
 
-def unstable_merp()
-  'merp'.chars.map do |c|
+def unstable_reet()
+  'reet'.chars.map do |c|
     if rand > 0.6
       c.upcase
     else
@@ -17,8 +17,8 @@ def unstable_merp()
   end.join('')
 end
 
-def loud_merp()
-  'MERP' << (rand * 10).to_i.times.collect do
+def loud_reet()
+  'REET' << (rand * 10).to_i.times.collect do
     r = rand
     if r < 0.3
       '!'
@@ -36,20 +36,20 @@ Cuba.define do
   
   on get do
     on 'api/v1' do
-      on 'merp' do
-        res.write 'merp'.to_json
+      on 'reet' do
+        res.write 'reet'.to_json
       end
 
-      on 'umerp' do
-        res.write 'ₘₑᵣₚ'.to_json
+      on 'ureet' do
+        res.write 'ᵣₑₑₜ'.to_json
       end
 
-      on 'cammerp' do
-        res.write unstable_merp.to_json
+      on 'Reet' do
+        res.write unstable_reet.to_json
       end
 
-      on 'MERP' do
-        res.write loud_merp.to_json
+      on 'REET' do
+        res.write loud_reet.to_json
       end
 
       on true do
@@ -60,12 +60,12 @@ Cuba.define do
 
   on post do
     on 'api/v1' do
-      on 'merp' do
+      on 'reet' do
         on param('amount') do |amt|
-          merps = []
-          amt.to_i.times { merps << 'merp' }
+          reets = []
+          amt.to_i.times { reets << 'reet' }
           
-          res.write merps.to_json
+          res.write reets.to_json
         end
 
         on true do
